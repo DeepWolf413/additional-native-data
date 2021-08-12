@@ -1,0 +1,29 @@
+// agency_heist3a.ysc @ L12769
+void func_140(var uParam0, bool bParam1)
+{
+  PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_7257, 1862763509);
+  PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, 1862763509, iLocal_7257);
+  PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, 1862763509, iLocal_7258);
+  PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_7257, iLocal_7258);
+  PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_7258, 1862763509);
+  PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_7258, iLocal_7257);
+  if (ENTITY::DOES_ENTITY_EXIST(*uParam0))
+  {
+    if (!PED::IS_PED_INJURED(*uParam0))
+    {
+      PED::SET_PED_RELATIONSHIP_GROUP_HASH(*uParam0, iLocal_7258);
+      PED::SET_PED_COMBAT_ATTRIBUTES(*uParam0, 9, false);
+      PED::SET_PED_COMBAT_ATTRIBUTES(*uParam0, 29, true);
+      PED::SET_PED_TARGET_LOSS_RESPONSE(*uParam0, 1);
+      ENTITY::SET_ENTITY_IS_TARGET_PRIORITY(*uParam0, true, 0f);
+      if (bParam1)
+      {
+        PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(*uParam0, true);
+      }
+      else
+      {
+        PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(*uParam0, false);
+      }
+    }
+  }
+}

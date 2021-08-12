@@ -1,0 +1,10 @@
+// hunting1.ysc @ L44579
+void func_452()
+{
+  STREAMING::REQUEST_MODEL(iLocal_727);
+  AUDIO::REQUEST_MISSION_AUDIO_BANK("SCRIPT\HUNTING_1_COYOTE_VOCALS", false, -1);
+  while (!STREAMING::HAS_MODEL_LOADED(iLocal_727))
+  {
+    SYSTEM::WAIT(0);
+  }
+}

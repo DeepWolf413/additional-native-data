@@ -1,0 +1,22 @@
+// michael1.ysc @ L4237
+void func_42()
+{
+  func_48();
+  func_46();
+  func_44();
+  func_43(0);
+  if (iLocal_607 == 1)
+  {
+    MISC::SET_WEATHER_TYPE_NOW_PERSIST("EXTRASUNNY");
+    MISC::CLEAR_WEATHER_TYPE_PERSIST();
+    MISC::_CLEAR_CLOUD_HAT();
+  }
+  else if (iLocal_607 == 0)
+  {
+    MISC::CLEAR_WEATHER_TYPE_PERSIST();
+  }
+  GRAPHICS::CLEAR_TIMECYCLE_MODIFIER();
+  GRAPHICS::_RESET_EXTRA_TIMECYCLE_MODIFIER_STRENGTH();
+  VEHICLE::_0x35E0654F4BAD7971(true);
+  VEHICLE::DELETE_ALL_TRAINS();
+}

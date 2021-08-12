@@ -1,0 +1,33 @@
+// fbi2.ysc @ L143734
+void func_1009()
+{
+  float fVar0;
+  struct<3> Var1;
+  
+  if (CAM::DOES_CAM_EXIST(iLocal_291))
+  {
+    func_6(&iLocal_290);
+    if (CAM::DOES_CAM_EXIST(iLocal_292))
+    {
+      CAM::DESTROY_CAM(iLocal_292, false);
+    }
+    fVar0 = CAM::GET_CAM_FOV(iLocal_291);
+    func_6(&iLocal_291);
+    func_507();
+    iLocal_291 = CAM::CREATE_CAMERA(1665938388, false);
+    Local_108[0] = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, CAM::GET_FINAL_RENDERED_CAM_COORD(), CAM::GET_FINAL_RENDERED_CAM_ROT(2), CAM::GET_FINAL_RENDERED_CAM_FOV(), true, 2);
+    CAM::ADD_CAM_SPLINE_NODE_USING_CAMERA(iLocal_291, Local_108[0], 0, 2);
+    CAM::SET_CAM_MOTION_BLUR_STRENGTH(Local_108[0], 0.5f);
+    Var1 = { func_607(CAM::GET_FINAL_RENDERED_CAM_COORD(), Local_1145, 0.1f) };
+    Local_108[1] = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Var1, CAM::GET_FINAL_RENDERED_CAM_ROT(2), CAM::GET_FINAL_RENDERED_CAM_FOV(), true, 2);
+    CAM::ADD_CAM_SPLINE_NODE_USING_CAMERA(iLocal_291, Local_108[1], 1200, 3);
+    CAM::SET_CAM_MOTION_BLUR_STRENGTH(Local_108[1], 0.8f);
+    Local_108[3] = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, Local_1145, Local_1148, fVar0, true, 2);
+    CAM::ADD_CAM_SPLINE_NODE_USING_CAMERA(iLocal_291, Local_108[3], 900, 2);
+    CAM::SET_CAM_MOTION_BLUR_STRENGTH(Local_108[3], 1f);
+    CAM::SET_CAM_SPLINE_DURATION(iLocal_291, 1000);
+    CAM::SET_CAM_SPLINE_SMOOTHING_STYLE(iLocal_291, 3);
+    CAM::SET_CAM_ACTIVE(iLocal_291, true);
+    CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
+  }
+}

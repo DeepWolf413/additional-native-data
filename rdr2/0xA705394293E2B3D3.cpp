@@ -1,0 +1,11 @@
+// native2.ysc @ L17808
+void func_179()
+{
+  if (GRAPHICS::GET_TIMECYCLE_MODIFIER_INDEX() != -1)
+  {
+    GRAPHICS::CLEAR_TIMECYCLE_MODIFIER();
+  }
+  MISC::CLEAR_WEATHER_TYPE_PERSIST();
+  MISC::_SET_WEATHER_TYPE_FROZEN(false);
+  func_444(0, 1103626240 /* Float: 25f */);
+}

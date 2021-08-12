@@ -1,0 +1,26 @@
+// industry3.ysc @ L37315
+int func_826(var uParam0)
+{
+  func_1416();
+  MISC::_0x2FCD528A397E5C88(Local_1695[8 /*2*/].f_1, 56);
+  TASK::USE_WAYPOINT_RECORDING_AS_ASSISTED_MOVEMENT_ROUTE(sLocal_66, 1, 1065353216 /* Float: 1f */, 1056964608 /* Float: 0.5f */, 1);
+  iLocal_1814 = VOLUME::_CREATE_VOLUME_BOX(2662.817f, -1183.362f, 53.29037f, 0f, 0f, -2.511165f, 1.781537f, 4.214457f, 2.42587f);
+  iLocal_1602[3] = func_1417("IND3_COACH", joaat("INPUT_ENTER"), iLocal_1814, 1, 0, 0, 0, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, joaat("SHORT_TIMED_EVENT"), 0);
+  func_1418(iLocal_1602[3], iLocal_77, 0, 1, -1);
+  func_1419(iLocal_1602[3], 3f, 1);
+  PED::_0xB06F5F1DEF417216(Local_1571[0 /*10*/], 1, 1, 1);
+  PED::_0xFC23348F0F4E245F(Local_1571[0 /*10*/], 1, 1, 1);
+  PED::_0x16802C32B2FCA06B(Local_1571[0 /*10*/], 0f, 1, 1);
+  PED::_0x75A082563B4452E5(Local_1571[0 /*10*/], 0f, 1, 1);
+  PED::_0xB06F5F1DEF417216(Global_35, 1, 1, 1);
+  PED::_0xFC23348F0F4E245F(Global_35, 1, 1, 1);
+  PED::_0x16802C32B2FCA06B(Global_35, 0f, 1, 1);
+  PED::_0x75A082563B4452E5(Global_35, 0f, 1, 1);
+  CAM::_0x1B3C2D961F5FC0E1("script@Story@IND3@wagon_ride");
+  UIFEED::_0xDD1232B332CBB9E7(1, 1, 0);
+  PLAYER::_0x0751D461F06E41CE(PLAYER::PLAYER_ID(), 10, 0, 1);
+  PLAYER::_0x0751D461F06E41CE(PLAYER::PLAYER_ID(), 5, 0, 1);
+  iLocal_1805 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2664.577f, -1182.968f, 53.1034f, 0f, 0f, 0f, 1.809818f, 1.662117f, 1.963951f);
+  func_1420();
+  return 1;
+}

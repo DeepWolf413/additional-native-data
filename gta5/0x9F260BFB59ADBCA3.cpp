@@ -1,0 +1,13 @@
+// freemode.ysc @ L183385
+void func_2551(int iParam0, var uParam1)
+{
+  if (ENTITY::DOES_ENTITY_EXIST(uParam1->f_156[iParam0]))
+  {
+    PLAYER::_0x9F260BFB59ADBCA3(PLAYER::PLAYER_ID(), uParam1->f_156[iParam0]);
+    ENTITY::SET_OBJECT_AS_NO_LONGER_NEEDED(&(uParam1->f_156[iParam0]));
+    AUDIO::STOP_SOUND(Global_2518927.f_272);
+    AUDIO::RELEASE_SOUND_ID(Global_2518927.f_272);
+    Global_2518927.f_272 = -1;
+  }
+  AUDIO::RELEASE_NAMED_SCRIPT_AUDIO_BANK("DLC_VINEWOOD/DLC_VW_HIDDEN_COLLECTIBLES");
+}

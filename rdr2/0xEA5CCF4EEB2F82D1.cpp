@@ -1,0 +1,26 @@
+// property_use_core.ysc @ L37886
+void func_1328(bool bParam0)
+{
+  if (!HUD::_UIPROMPT_IS_VALID(Global_1914319.f_19461.f_180) && bParam0)
+  {
+    Global_1914319.f_19461.f_180 = HUD::_UIPROMPT_REGISTER_BEGIN();
+    HUD::_0xF4A5C4509BF923B1(Global_1914319.f_19461.f_180, 0);
+    HUD::_UIPROMPT_SET_TEXT(Global_1914319.f_19461.f_180, "WARDROBE_INSPECT_PROMPT");
+    HUD::_UIPROMPT_SET_CONTROL_ACTION(Global_1914319.f_19461.f_180, joaat("INPUT_INSPECT_ZOOM"));
+    HUD::_UIPROMPT_SET_HOLD_INDEFINITELY_MODE(Global_1914319.f_19461.f_180);
+    HUD::_UIPROMPT_REGISTER_END(Global_1914319.f_19461.f_180);
+  }
+  if (HUD::_UIPROMPT_IS_VALID(Global_1914319.f_19461.f_180))
+  {
+    if (!func_827(Global_1914319.f_19461.f_1))
+    {
+      HUD::_UIPROMPT_SET_ENABLED(Global_1914319.f_19461.f_180, false);
+      HUD::_UIPROMPT_SET_VISIBLE(Global_1914319.f_19461.f_180, false);
+    }
+    else
+    {
+      HUD::_UIPROMPT_SET_ENABLED(Global_1914319.f_19461.f_180, bParam0);
+      HUD::_UIPROMPT_SET_VISIBLE(Global_1914319.f_19461.f_180, bParam0);
+    }
+  }
+}

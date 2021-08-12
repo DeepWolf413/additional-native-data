@@ -1,0 +1,26 @@
+// exile3.ysc @ L135441
+void func_1053()
+{
+  if (ENTITY::IS_ENTITY_ATTACHED(PLAYER::PLAYER_PED_ID()))
+  {
+    if (!WEAPON::GET_IS_PED_GADGET_EQUIPPED(PLAYER::PLAYER_PED_ID(), joaat("gadget_parachute")))
+    {
+      if (PED::GET_VEHICLE_PED_IS_USING(PLAYER::PLAYER_PED_ID()) == 0)
+      {
+        TASK::CLEAR_PED_TASKS(PLAYER::PLAYER_PED_ID());
+        ENTITY::DETACH_ENTITY(PLAYER::PLAYER_PED_ID(), true, true);
+      }
+    }
+  }
+  if (OBJECT::DOES_RAYFIRE_MAP_OBJECT_EXIST(iLocal_1550))
+  {
+    OBJECT::SET_STATE_OF_RAYFIRE_MAP_OBJECT(iLocal_1550, 11);
+  }
+  PLAYER::SET_PLAYER_FORCED_AIM(PLAYER::PLAYER_ID(), false);
+  PATHFIND::SET_GPS_DISABLED_ZONE(0f, 0f, 0f, 0f, 0f, 0f);
+  func_1056();
+  PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 0);
+  PED::SET_PED_CAN_SWITCH_WEAPON(PLAYER::PLAYER_PED_ID(), true);
+  func_7(0, 1, 1, 0, 0, 0, 0);
+  func_1054();
+}

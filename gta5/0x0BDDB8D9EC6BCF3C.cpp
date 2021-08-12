@@ -1,0 +1,11 @@
+// me_amanda1.ysc @ L32109
+void func_221()
+{
+  PED::SET_PED_AS_GROUP_MEMBER(iLocal_408, func_226());
+  PED::SET_PED_GROUP_MEMBER_PASSENGER_INDEX(iLocal_408, 0);
+  PED::SET_PED_NEVER_LEAVES_GROUP(iLocal_408, true);
+  PED::SET_PED_CAN_BE_TARGETTED(iLocal_408, false);
+  PED::SET_PED_DIES_IN_WATER(iLocal_408, false);
+  PED::SET_PED_DIES_IN_SINKING_VEHICLE(iLocal_408, false);
+  AUDIO::DISTANT_COP_CAR_SIRENS(false);
+}

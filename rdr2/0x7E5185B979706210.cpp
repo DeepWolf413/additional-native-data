@@ -1,0 +1,25 @@
+// mudtown3b.ysc @ L49611
+void func_1227()
+{
+  iLocal_2386 = PED::CREATE_GROUP(2);
+  PED::SET_GROUP_FORMATION(iLocal_2386, 10);
+  PED::_0x7E5185B979706210(iLocal_2386, 2);
+  PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_106.f_1, true);
+  PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_133.f_1, true);
+  PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_160.f_1, true);
+  PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_2290, true);
+  PED::SET_PED_CONFIG_FLAG(Local_106, 279, true);
+  PED::SET_PED_CONFIG_FLAG(Local_106.f_1, 279, true);
+  PED::SET_PED_CONFIG_FLAG(Local_133.f_1, 279, true);
+  PED::SET_PED_CONFIG_FLAG(Local_160.f_1, 279, true);
+  PED::SET_PED_CONFIG_FLAG(iLocal_2290, 279, true);
+  TASK::CLEAR_PED_TASKS(iLocal_2290, true, false);
+  TASK::CLEAR_PED_TASKS(Local_106.f_1, true, false);
+  TASK::CLEAR_PED_TASKS(Local_133.f_1, true, false);
+  TASK::CLEAR_PED_TASKS(Local_160.f_1, true, false);
+  PED::SET_PED_AS_GROUP_LEADER(Local_106, iLocal_2386, false);
+  PED::SET_PED_AS_GROUP_MEMBER(Local_106.f_1, iLocal_2386);
+  PED::SET_PED_AS_GROUP_MEMBER(Local_133.f_1, iLocal_2386);
+  PED::SET_PED_AS_GROUP_MEMBER(Local_160.f_1, iLocal_2386);
+  PED::SET_PED_AS_GROUP_MEMBER(iLocal_2290, iLocal_2386);
+}

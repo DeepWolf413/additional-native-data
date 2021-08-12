@@ -1,0 +1,21 @@
+// respawn_dump_body.ysc @ L1045
+int func_9(float fParam0, float fParam1)
+{
+  if ((((((((((((((((TASK::IS_PED_WALKING(Global_35) || TASK::IS_PED_RUNNING(Global_35)) || TASK::IS_PED_SPRINTING(Global_35)) || PLAYER::IS_PLAYER_FREE_AIMING(PLAYER::PLAYER_ID())) || MISC::ABSF(fParam0) > 0.2f) || MISC::ABSF(fParam1) > 0.2f) || PAD::IS_CONTROL_JUST_PRESSED(0, joaat("INPUT_CONTEXT_A"))) || PAD::IS_CONTROL_JUST_PRESSED(0, joaat("INPUT_OPEN_WHEEL_MENU"))) || PAD::IS_CONTROL_JUST_PRESSED(0, joaat("INPUT_TOGGLE_HOLSTER"))) || PAD::IS_CONTROL_JUST_PRESSED(0, joaat("INPUT_ATTACK"))) || PAD::IS_CONTROL_JUST_PRESSED(0, joaat("INPUT_ATTACK2"))) || PAD::IS_CONTROL_JUST_PRESSED(0, joaat("INPUT_MELEE_ATTACK"))) || PAD::GET_CONTROL_NORMAL(0, joaat("INPUT_ATTACK")) > 0f) || PAD::IS_CONTROL_JUST_PRESSED(0, joaat("INPUT_SELECT_RADAR_MODE"))) || PAD::IS_DISABLED_CONTROL_JUST_PRESSED(0, joaat("INPUT_OPEN_JOURNAL"))) || PAD::IS_CONTROL_JUST_PRESSED(0, joaat("INPUT_OPEN_SATCHEL_MENU"))) || PAD::IS_CONTROL_JUST_PRESSED(0, joaat("INPUT_OPEN_JOURNAL")))
+  {
+    return 1;
+  }
+  if (Local_32.f_59 && PAD::IS_CONTROL_JUST_PRESSED(0, joaat("INPUT_HORSE_EXIT")))
+  {
+    bLocal_150 = true;
+    return 1;
+  }
+  if (!PED::IS_PED_INJURED(Local_32.f_98))
+  {
+    if (PED::_0xB8E2D655E1D5BD39(Local_32.f_98))
+    {
+      return 1;
+    }
+  }
+  return 0;
+}

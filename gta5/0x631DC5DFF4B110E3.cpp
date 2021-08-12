@@ -1,0 +1,8 @@
+// am_mp_property_int.ysc @ L269600
+void func_3023()
+{
+  if (((((((!func_8265(&Global_2553289) && !NETWORK::NETWORK_IS_PLAYER_FADING(PLAYER::PLAYER_ID())) && !func_1997()) && !func_3306(PLAYER::PLAYER_ID(), 0)) && !CAM::IS_SCREEN_FADED_OUT()) && ENTITY::GET_ENTITY_ALPHA(PLAYER::PLAYER_PED_ID()) == 0) && PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID())) && !func_3540())
+  {
+    ENTITY::SET_ENTITY_ALPHA(PLAYER::PLAYER_PED_ID(), 255, false);
+  }
+}

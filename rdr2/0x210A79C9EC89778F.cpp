@@ -1,0 +1,12 @@
+// beat_public_hanging.ysc @ L1314
+void func_26()
+{
+  if (!STREAMING::HAS_COLLISION_FOR_MODEL_LOADED(iLocal_983))
+  {
+    STREAMING::REQUEST_COLLISION_FOR_MODEL(iLocal_983);
+  }
+  if (!STREAMING::HAS_COLLISION_FOR_MODEL_LOADED(Local_818[3 /*12*/].f_7))
+  {
+    STREAMING::REQUEST_COLLISION_FOR_MODEL(Local_818[3 /*12*/].f_7);
+  }
+}

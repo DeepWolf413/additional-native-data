@@ -1,0 +1,18 @@
+// rcm_native2.ysc @ L21179
+void func_744()
+{
+  if (iLocal_85 != 4)
+  {
+    if (((ANIMSCENE::_DOES_ANIM_SCENE_EXIST(iLocal_86) && ANIMSCENE::_IS_ANIM_SCENE_STARTED(iLocal_86, false)) && ANIMSCENE::_0xB89FCFF19DAFFF28(iLocal_86, "RNATV_Guard4")) || ((ANIMSCENE::_DOES_ANIM_SCENE_EXIST(iLocal_87) && ANIMSCENE::_IS_ANIM_SCENE_STARTED(iLocal_87, false)) && ANIMSCENE::_0xB89FCFF19DAFFF28(iLocal_87, "S_M_M_CornwallGuard_01")))
+    {
+      ANIMSCENE::_DELETE_ANIM_SCENE(iLocal_86);
+      ANIMSCENE::_DELETE_ANIM_SCENE(iLocal_87);
+      if (TASK::VEHICLE_WAYPOINT_PLAYBACK_GET_IS_PAUSED(iLocal_137))
+      {
+        TASK::VEHICLE_WAYPOINT_PLAYBACK_RESUME(iLocal_137);
+        TASK::VEHICLE_WAYPOINT_PLAYBACK_USE_DEFAULT_SPEED(iLocal_137);
+      }
+      iLocal_85 = 4;
+    }
+  }
+}

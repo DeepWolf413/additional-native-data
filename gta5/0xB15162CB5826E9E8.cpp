@@ -1,0 +1,20 @@
+// am_mp_car_meet_property.ysc @ L459767
+void func_6710()
+{
+  if ((ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()) && func_8(PLAYER::PLAYER_PED_ID())) && !Global_1694760)
+  {
+    PED::SET_PED_RESET_FLAG(PLAYER::PLAYER_PED_ID(), 46, true);
+    PED::SET_PED_RESET_FLAG(PLAYER::PLAYER_PED_ID(), 47, true);
+    PED::SET_PED_RESET_FLAG(PLAYER::PLAYER_PED_ID(), 102, true);
+  }
+  PAD::DISABLE_CONTROL_ACTION(0, 80, true);
+  if ((!NETWORK::NETWORK_IS_ACTIVITY_SESSION() && !func_1915()) && func_5544(0))
+  {
+    PAD::SET_INPUT_EXCLUSIVE(2, 44);
+    PAD::DISABLE_CONTROL_ACTION(2, 44, true);
+  }
+  if (CAM::IS_CINEMATIC_CAM_RENDERING())
+  {
+    CAM::SET_CINEMATIC_MODE_ACTIVE(false);
+  }
+}

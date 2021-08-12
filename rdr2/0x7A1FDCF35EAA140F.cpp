@@ -1,0 +1,29 @@
+// native_son2.ysc @ L17717
+void func_166()
+{
+  MISC::SET_TIME_SCALE(1f);
+  if (PED::_0x91A5F9CBEBB9D936(uLocal_414))
+  {
+    PED::REMOVE_SCENARIO_BLOCKING_AREA(uLocal_414, false);
+  }
+  if (VOLUME::_DOES_VOLUME_EXIST(iLocal_413))
+  {
+    POPULATION::_0x74C2B3DC0B294102(iLocal_413);
+  }
+  if (PATHFIND::_0xDE0EA444735C1368(iLocal_410))
+  {
+    PATHFIND::_0x2C87C3E1C7B96EE2(iLocal_410);
+  }
+  AICOVERPOINT::_0x7A1FDCF35EAA140F("nativeson2_fallentrees");
+  AICOVERPOINT::_0x7A1FDCF35EAA140F("nativeson2_ambushtrees");
+  PATHFIND::_0xD17672447692478E(iLocal_411, 0);
+  MISC::CLEAR_WEATHER_TYPE_PERSIST();
+  MISC::CLEAR_OVERRIDE_WEATHER();
+  CLOCK::PAUSE_CLOCK(false, 0);
+  CLOCK::_SET_MILLISECONDS_PER_GAME_MINUTE(2000);
+  func_432(0, 0, 1103626240 /* Float: 25f */);
+  func_433(1);
+  func_434();
+  func_435(0);
+  func_436();
+}

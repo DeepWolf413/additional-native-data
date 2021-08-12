@@ -1,0 +1,13 @@
+// pilot_school.ysc @ L104755
+void func_824()
+{
+  func_825();
+  if (!ENTITY::IS_ENTITY_DEAD(Local_870, false))
+  {
+    ENTITY::SET_ENTITY_COORDS(Local_870, VEHICLE::GET_POSITION_OF_VEHICLE_RECORDING_AT_TIME(iLocal_1469, 1500f, "PilotSchool"), true, false, false, true);
+    ENTITY::SET_ENTITY_ROTATION(Local_870, VEHICLE::GET_ROTATION_OF_VEHICLE_RECORDING_AT_TIME(iLocal_1469, 1500f, "PilotSchool"), 2, true);
+    ENTITY::FREEZE_ENTITY_POSITION(Local_870, true);
+  }
+  HUD::SET_MINIMAP_COMPONENT(0, false, -1);
+  STREAMING::NEW_LOAD_SCENE_START(2538.59f, 889.7548f, 262.7056f, func_490(Vector(254.392f, 882.0132f, 2544.748f) - Vector(262.7056f, 889.7548f, 2538.59f)), 5000f, 0);
+}

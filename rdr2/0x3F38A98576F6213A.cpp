@@ -1,0 +1,6 @@
+// act_caunc_rustling.ysc @ L42034
+void func_1095()
+{
+  ENTITY::REMOVE_MODEL_HIDE(1399.447f, -844.6359f, 64.8634f, 5f, joaat("P_RUSSLINGGATELOCK02X"), 0);
+  ENTITY::REMOVE_MODEL_HIDE(1399.883f, -847.0065f, 65.6747f, 1f, joaat("P_CS_CHAINLINK01X"), 0);
+}

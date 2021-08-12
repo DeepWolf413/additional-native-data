@@ -1,0 +1,22 @@
+// fmmc_launcher.ysc @ L341674
+void func_5118()
+{
+  if (func_195())
+  {
+    return;
+  }
+  HUD::_CLEAR_RACE_GALLERY_BLIPS();
+  HUD::DISPLAY_RADAR(false);
+  HUD::_RACE_GALLERY_FULLSCREEN(false);
+  HUD::SET_RADAR_ZOOM(0);
+  HUD::SET_GPS_CUSTOM_ROUTE_RENDER(false, 18, 30);
+  HUD::UNLOCK_MINIMAP_POSITION();
+  HUD::UNLOCK_MINIMAP_ANGLE();
+  HUD::_DELETE_WAYPOINT();
+  HUD::CLEAR_GPS_CUSTOM_ROUTE();
+  HUD::CLEAR_GPS_FLAGS();
+  func_4829(226);
+  Global_1574590 = 0;
+  func_5119(0);
+  PLAYER::SET_POLICE_RADAR_BLIPS(true);
+}

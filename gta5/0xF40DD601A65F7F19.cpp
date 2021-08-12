@@ -1,0 +1,33 @@
+// fm_content_island_heist.ysc @ L36170
+void func_1129(int iParam0, int iParam1)
+{
+  if (func_180(iParam0, 15))
+  {
+    return;
+  }
+  if (iParam0 == 0)
+  {
+    NETWORK::SET_NETWORK_ID_ALWAYS_EXISTS_FOR_PLAYER(Local_12697.f_795[iParam0 /*6*/], bLocal_12604, true);
+    ENTITY::SET_ENTITY_INVINCIBLE(iParam1, true);
+    ENTITY::FREEZE_ENTITY_POSITION(iParam1, true);
+    VEHICLE::SET_VEHICLE_COLOURS(iParam1, 105, 0);
+    VEHICLE::SET_VEHICLE_EXTRA_COLOURS(iParam1, 0, 111);
+    VEHICLE::_SET_VEHICLE_INTERIOR_COLOR(iParam1, 1);
+    VEHICLE::_SET_VEHICLE_DASHBOARD_COLOR(iParam1, 132);
+    VEHICLE::SET_VEHICLE_ENGINE_ON(iParam1, true, true, false);
+    PHYSICS::ACTIVATE_PHYSICS(iParam1);
+    ENTITY::SET_ENTITY_DYNAMIC(iParam1, true);
+    VEHICLE::SET_HELI_BLADES_FULL_SPEED(iParam1);
+    VEHICLE::SET_VEHICLE_FLIGHT_NOZZLE_POSITION_IMMEDIATE(iParam1, 1f);
+    VEHICLE::SET_VEHICLE_DOORS_LOCKED(iParam1, 2);
+    VEHICLE::SET_VEHICLE_DOORS_LOCKED_FOR_ALL_PLAYERS(iParam1, true);
+  }
+  else if (iParam0 == 3)
+  {
+    ENTITY::SET_ENTITY_LOAD_COLLISION_FLAG(iParam1, true, 1);
+    VEHICLE::SET_HELI_BLADES_FULL_SPEED(iParam1);
+    VEHICLE::SET_VEHICLE_ENGINE_ON(iParam1, true, true, false);
+    PHYSICS::ACTIVATE_PHYSICS(iParam1);
+    ENTITY::SET_ENTITY_DYNAMIC(iParam1, true);
+  }
+}

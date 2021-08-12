@@ -1,0 +1,25 @@
+// train_robbery2.ysc @ L59857
+void func_1436(bool bParam0)
+{
+  if (PROPSET::_DOES_PROPSET_EXIST(PROPSET::_GET_VEHICLE_PROPSET(iLocal_4543)))
+  {
+    PROPSET::_DELETE_PROPSET(PROPSET::_GET_VEHICLE_PROPSET(iLocal_4543), true, true);
+  }
+  if (!ENTITY::DOES_ENTITY_EXIST(iLocal_4547))
+  {
+    iLocal_4547 = OBJECT::CREATE_OBJECT(joaat("P_TNT_TRAINROBBERY_01X"), 2579.888f, 520.3545f, 75.0227f, true, true, false, false, true);
+    ENTITY::SET_ENTITY_ROTATION(iLocal_4547, 0f, 0f, 6.5312f, 2, true);
+    ENTITY::SET_ENTITY_COLLISION(iLocal_4547, true, false);
+    ENTITY::SET_ENTITY_LOAD_COLLISION_FLAG(iLocal_4547, 1);
+    ENTITY::FREEZE_ENTITY_POSITION(iLocal_4547, bParam0);
+  }
+  if (!ENTITY::DOES_ENTITY_EXIST(iLocal_4546))
+  {
+    iLocal_4546 = OBJECT::CREATE_OBJECT(joaat("P_CRATECOVER06X_TNT"), 2576.033f, 520.1063f, 68.3836f, true, true, false, false, true);
+    ENTITY::SET_ENTITY_COLLISION(iLocal_4546, true, false);
+    ENTITY::SET_ENTITY_LOAD_COLLISION_FLAG(iLocal_4546, 1);
+    ENTITY::SET_ENTITY_ROTATION(iLocal_4546, 0f, 5f, 6.5312f, 2, true);
+    ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_RELATIONSHIP_GROUP(iLocal_4546, true, iLocal_4818);
+    ENTITY::FREEZE_ENTITY_POSITION(iLocal_4546, bParam0);
+  }
+}

@@ -1,0 +1,25 @@
+// barry2.ysc @ L38367
+void func_303()
+{
+  if (AUDIO::IS_AUDIO_SCENE_ACTIVE(sLocal_344))
+  {
+    AUDIO::STOP_AUDIO_SCENE(sLocal_344);
+  }
+  func_75(&iLocal_811);
+  func_79(1);
+  func_77();
+  func_72(1);
+  func_305();
+  if (ENTITY::DOES_ENTITY_EXIST(Local_96.f_28[0]))
+  {
+    PED::DELETE_PED(&(Local_96.f_28[0]));
+  }
+  PLAYER::SET_PLAYER_HEALTH_RECHARGE_MULTIPLIER(PLAYER::PLAYER_ID(), 1f);
+  PLAYER::SET_PLAYER_WEAPON_DAMAGE_MODIFIER(PLAYER::GET_PLAYER_INDEX(), 1f);
+  PED::SET_PED_CAN_SWITCH_WEAPON(PLAYER::PLAYER_PED_ID(), true);
+  PLAYER::SPECIAL_ABILITY_UNLOCK(func_18(2), 0);
+  PED::SET_PED_USING_ACTION_MODE(PLAYER::PLAYER_PED_ID(), false, -1, 0);
+  func_35(&iLocal_212);
+  func_304();
+  GRAPHICS::ENABLE_CLOWN_BLOOD_VFX(false);
+}

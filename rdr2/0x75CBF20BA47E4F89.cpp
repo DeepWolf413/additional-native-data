@@ -1,0 +1,7 @@
+// mudtown3b.ysc @ L52803
+void func_1347()
+{
+  LAW::_0xEDFC6C1FD1C964F5(PLAYER::GET_PLAYER_INDEX(), joaat("CRIME_TRAIN_ROBBERY"), 0, 0, 0, 0, 0, 0, 0);
+  LAW::_0x75CBF20BA47E4F89(func_406(8, 0), joaat("LAW_CUSTOM_MUD3B"));
+  func_1913(func_1912("LAW_UI_DEAD_OR_ALIVE"));
+}

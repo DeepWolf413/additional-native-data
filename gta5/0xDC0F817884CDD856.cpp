@@ -1,0 +1,8 @@
+// agency_heist3a.ysc @ L118335
+void func_776()
+{
+  MISC::ENABLE_DISPATCH_SERVICE(3, false);
+  MISC::ENABLE_DISPATCH_SERVICE(1, false);
+  MISC::ENABLE_DISPATCH_SERVICE(2, false);
+  MISC::ENABLE_DISPATCH_SERVICE(5, false);
+}

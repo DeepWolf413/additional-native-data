@@ -1,0 +1,6 @@
+// agency_heist3a.ysc @ L124156
+void func_901()
+{
+  GRAPHICS::OVERRIDE_INTERIOR_SMOKE_LEVEL(0f);
+  GRAPHICS::OVERRIDE_INTERIOR_SMOKE_END();
+}

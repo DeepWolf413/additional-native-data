@@ -1,0 +1,17 @@
+// am_armwrestling.ysc @ L121947
+void func_1102()
+{
+  var uVar0;
+  var uVar7;
+  
+  uVar0 = 1;
+  uVar7 = 1;
+  if (func_861(749, &uVar0, &uVar7, 0, -1, 0, 0))
+  {
+    STATS::LEADERBOARDS_WRITE_ADD_COLUMN(151, iLocal_1553[1], SYSTEM::TO_FLOAT(iLocal_1553[1]));
+    STATS::LEADERBOARDS_WRITE_ADD_COLUMN(125, iLocal_1553[2], SYSTEM::TO_FLOAT(iLocal_1553[2]));
+    STATS::LEADERBOARDS_WRITE_ADD_COLUMN(2, iLocal_1553[5], SYSTEM::TO_FLOAT(iLocal_1553[5]));
+    STATS::LEADERBOARDS_WRITE_ADD_COLUMN(147, iLocal_1553[6], SYSTEM::TO_FLOAT(iLocal_1553[6]));
+    STATS::LEADERBOARDS_WRITE_ADD_COLUMN(110, iLocal_1553[3], SYSTEM::TO_FLOAT(iLocal_1553[3]));
+  }
+}

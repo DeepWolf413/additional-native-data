@@ -1,0 +1,5 @@
+// native1.ysc @ L18204
+void func_180()
+{
+  PLAYER::SET_PLAYER_NOISE_MULTIPLIER(PLAYER::GET_PLAYER_INDEX(), 1f);
+}

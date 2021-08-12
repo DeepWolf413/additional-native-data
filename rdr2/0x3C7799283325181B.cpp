@@ -1,0 +1,19 @@
+// property_use_core.ysc @ L15650
+void func_581(var uParam0)
+{
+  if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(uParam0->f_2031.f_60))
+  {
+    uParam0->f_2031.f_60 = DATABINDING::_DATABINDING_ADD_UI_ITEM_LIST_BY_HASH(uParam0->f_2031.f_50, 924730110);
+  }
+  else
+  {
+    DATABINDING::_DATABINDING_CLEAR_BINDING_ARRAY(uParam0->f_2031.f_60);
+  }
+  uParam0->f_2031.f_73 = 0;
+  func_643(uParam0, 0);
+  if (DATABINDING::_DATABINDING_IS_DATA_ID_VALID(uParam0->f_2031.f_61))
+  {
+    DATABINDING::_DATABINDING_REMOVE_DATA_ENTRY(uParam0->f_2031.f_61);
+  }
+  uParam0->f_2031.f_61 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER_BY_HASH(uParam0->f_2031.f_50, -248239712);
+}

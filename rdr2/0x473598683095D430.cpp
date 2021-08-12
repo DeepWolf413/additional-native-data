@@ -1,0 +1,13 @@
+// beat_outlaw_transport.ysc @ L1841
+void func_29(bool bParam0)
+{
+  ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_PLAYER(uLocal_801[0], bParam0);
+  ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_PLAYER(Local_239[0 /*32*/].f_11, bParam0);
+  ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_PLAYER(uLocal_801[1], bParam0);
+  ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_PLAYER(Local_239[1 /*32*/].f_11, bParam0);
+  ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_PLAYER(uLocal_801[2], bParam0);
+  ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_PLAYER(Local_239[2 /*32*/].f_11, bParam0);
+  if (bParam0)
+  {
+  }
+}

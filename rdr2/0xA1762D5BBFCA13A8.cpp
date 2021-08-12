@@ -1,0 +1,29 @@
+// fussar1.ysc @ L35170
+int func_770(char[4] cParam0)
+{
+  func_1312(cParam0);
+  func_100(cParam0, 33554432);
+  func_1313(0);
+  if (func_445(iLocal_1282, 0))
+  {
+    PED::_SET_PED_BLACKBOARD_FLOAT(iLocal_1282, "Cautious", 1f, -1);
+  }
+  if (func_445(Local_14.f_8[0], 0))
+  {
+    func_916(Local_14.f_8[0], 1514.78f, -7130.48f, 72.84f, 174.11f, 2, 1073741824 /* Float: 2f */);
+    func_1314(Local_14.f_8[0], 1, 1);
+    INTERIOR::CLEAR_ROOM_FOR_ENTITY(Local_14.f_8[0]);
+  }
+  uLocal_1892[13] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 1501.166f, -7147.3f, 73.21652f, 0f, 0f, 5.45153f, 3.739671f, 1.653315f, 2.629381f);
+  uLocal_1892[14] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 1494.205f, -7165.217f, 73.01987f, 0f, 0f, 16.69545f, 1.170295f, 1f, 2.35857f);
+  if (!VOLUME::_DOES_VOLUME_EXIST(uLocal_1892[2]))
+  {
+    uLocal_1892[2] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 1510.568f, -7140.879f, 68.8152f, 0f, 0f, -27.33427f, 2.545303f, 1.395697f, 1.792869f);
+  }
+  iLocal_1317[43] = VOLUME::_CREATE_VOLUME_BY_HASH_WITH_CUSTOM_NAME(joaat("VOLBOX"), 1507.086f, -7155.773f, 74.037f, 0f, 0f, 49.75f, 11.247f, 21.902f, 6.52835f, "FUS1_VOL_STEALTH_SPRINT_BLOCK");
+  iLocal_1910[4] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(1501.154f, -7147.353f, 72.80352f, 0f, 0f, 53.06007f, 5.945814f, 7.120436f, 6.096568f, "FUS1_VOL_COVERBLOCK_STEALTH_KILL_SHED");
+  TASK::_0xEB2ED1DC3AEC0654(iLocal_1910[4], 1, 1, 1, 1);
+  PED::SET_PED_CONFIG_FLAG(Global_35, 528, true);
+  CAM::_0xE296208C273BD7F0(-1, -1, 0, 17, 1, 0);
+  return 1;
+}

@@ -1,0 +1,19 @@
+// finale3.ysc @ L61203
+void func_1596(int iParam0)
+{
+  switch (iParam0)
+  {
+    case 0:
+      GRAPHICS::_0xB8C984C0D47F4F07(-0.201f, 0.114f, 0);
+      GRAPHICS::_0xB8C984C0D47F4F07(-0.044f, 0.041f, 1);
+      GRAPHICS::_0x085C5B61A0114F32(-0.544f, 0f);
+      GRAPHICS::_0xFE7966DF01452F32(2426.344f, 2124.317f, -101.186f);
+      break;
+    case 12:
+      GRAPHICS::_0xB8C984C0D47F4F07(-0.106f, 0.138f, 0);
+      GRAPHICS::_0xB8C984C0D47F4F07(-0.113f, -0.277f, 1);
+      GRAPHICS::_0x085C5B61A0114F32(-0.153f, 0f);
+      GRAPHICS::_0xFE7966DF01452F32(3390.93f, 407.579f, -1075.9f);
+      break;
+  }
+}

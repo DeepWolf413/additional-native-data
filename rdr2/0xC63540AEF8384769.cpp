@@ -1,0 +1,11 @@
+// guama3.ysc @ L61642
+void func_1289()
+{
+  WATER::_0xC63540AEF8384769();
+  if (!ANIMSCENE::_IS_ANIM_SCENE_STARTED(iLocal_4917, false))
+  {
+    ANIMSCENE::SET_ANIM_SCENE_ENTITY(iLocal_4917, "player_zero", Global_35, 0);
+    ANIMSCENE::SET_ANIM_SCENE_ENTITY(iLocal_4917, "SHIP_NBDGUAMA", Local_4374, 0);
+    ANIMSCENE::START_ANIM_SCENE(iLocal_4917);
+  }
+}

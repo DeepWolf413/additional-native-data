@@ -1,0 +1,10 @@
+// native1.ysc @ L70172
+void func_1752()
+{
+  CAM::_0x05BD5E4088B30A66(-4.2771f, 14.4744f);
+  CAM::_SET_FIRST_PERSON_CAM_PITCH_RANGE(-28.4854f, -18.6004f);
+  if (CAM::_0xA24C1D341C6E0D53(1, 1, 1))
+  {
+    ENTITY::SET_ENTITY_HEADING(Global_35, func_1678(13, 7));
+  }
+}

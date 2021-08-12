@@ -1,0 +1,21 @@
+// braithwaites3.ysc @ L55364
+void func_1324(bool bParam0, float fParam1)
+{
+  if (bParam0)
+  {
+    PLAYER::_0x28A13BF6B05C3D83(PLAYER::PLAYER_ID(), true);
+    PLAYER::_0x22B3CABEDDB538B2(PLAYER::PLAYER_ID(), fParam1);
+    PED::SET_PED_RESET_FLAG(PLAYER::PLAYER_PED_ID(), 159, true);
+    PLAYER::_0xBBA140062B15A8AC(PLAYER::PLAYER_ID());
+  }
+  else
+  {
+    if (!func_1742(13))
+    {
+      PLAYER::_0x28A13BF6B05C3D83(PLAYER::PLAYER_ID(), false);
+    }
+    PLAYER::_0x22B3CABEDDB538B2(PLAYER::PLAYER_ID(), 0f);
+    PED::SET_PED_RESET_FLAG(PLAYER::PLAYER_PED_ID(), 159, false);
+    PLAYER::_0xAE637BB8EF017875(PLAYER::PLAYER_ID(), 1);
+  }
+}

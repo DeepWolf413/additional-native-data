@@ -1,0 +1,12 @@
+// agency_prep2amb.ysc @ L11001
+int func_212()
+{
+  if (PED::IS_PED_IN_ANY_TAXI(PLAYER::PLAYER_PED_ID()))
+  {
+    if ((VEHICLE::GET_PED_IN_VEHICLE_SEAT(PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false), 0, false) == PLAYER::PLAYER_PED_ID() || VEHICLE::GET_PED_IN_VEHICLE_SEAT(PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false), 1, false) == PLAYER::PLAYER_PED_ID()) || VEHICLE::GET_PED_IN_VEHICLE_SEAT(PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false), 2, false) == PLAYER::PLAYER_PED_ID())
+    {
+      return 1;
+    }
+  }
+  return 0;
+}

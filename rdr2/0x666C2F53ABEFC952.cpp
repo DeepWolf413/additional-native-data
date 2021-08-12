@@ -1,0 +1,17 @@
+// caligahall.ysc @ L2564
+void func_92(int iParam0, var uParam1)
+{
+  if (VOLUME::_0x666C2F53ABEFC952(iParam0) != joaat("REL_NO_RELATIONSHIP"))
+  {
+    VOLUME::_0xFD010A2154B40676(iParam0, joaat("REL_NO_RELATIONSHIP"));
+  }
+  if (uParam1->f_3)
+  {
+    PLAYER::_0x0751D461F06E41CE(PLAYER::PLAYER_ID(), 7, 0, 0);
+    PLAYER::_0x0751D461F06E41CE(PLAYER::PLAYER_ID(), 20, 0, 0);
+    PLAYER::_0x0751D461F06E41CE(PLAYER::PLAYER_ID(), 19, 0, 0);
+    PLAYER::_0x0751D461F06E41CE(PLAYER::PLAYER_ID(), 10, 0, 0);
+    PLAYER::_0x0751D461F06E41CE(PLAYER::PLAYER_ID(), 4, 0, 0);
+    uParam1->f_3 = 0;
+  }
+}

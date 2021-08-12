@@ -1,0 +1,9 @@
+// am_mp_island.ysc @ L227091
+void func_2765()
+{
+  if (!NETWORK::NETWORK_IS_ACTIVITY_SESSION() && !func_1184(PLAYER::PLAYER_ID()))
+  {
+    NETWORK::NETWORK_OVERRIDE_CLOCK_TIME(7, 0, 0);
+    MISC::_0x1178E104409FE58C("EXTRASUNNY", 1);
+  }
+}

@@ -1,0 +1,14 @@
+// startup.ysc @ L9761
+void func_331(bool bParam0)
+{
+  if (((bParam0 && NETWORK::NETWORK_IS_GAME_IN_PROGRESS()) && !NETWORK::NETWORK_IS_IN_TUTORIAL_SESSION()) && !func_340(1))
+  {
+    NETWORK::NETWORK_START_SOLO_TUTORIAL_SESSION();
+    func_333(1);
+  }
+  else if (((!bParam0 && NETWORK::NETWORK_IS_GAME_IN_PROGRESS()) && NETWORK::NETWORK_IS_IN_TUTORIAL_SESSION()) && func_340(1))
+  {
+    NETWORK::NETWORK_END_TUTORIAL_SESSION();
+    func_341(1);
+  }
+}

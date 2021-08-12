@@ -1,0 +1,6 @@
+// am_armwrestling.ysc @ L125769
+void func_1339(int* iParam0)
+{
+  GRAPHICS::SET_SCALEFORM_MOVIE_AS_NO_LONGER_NEEDED(iParam0);
+  AUDIO::RELEASE_SCRIPT_AUDIO_BANK();
+}

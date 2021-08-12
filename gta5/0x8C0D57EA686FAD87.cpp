@@ -1,0 +1,23 @@
+// barry1.ysc @ L42094
+void func_388(int iParam0)
+{
+  int iVar0;
+  
+  if (func_575(PLAYER::PLAYER_PED_ID()))
+  {
+    if (!WEAPON::HAS_PED_GOT_WEAPON(PLAYER::PLAYER_PED_ID(), iParam0, false))
+    {
+      WEAPON::GIVE_WEAPON_TO_PED(PLAYER::PLAYER_PED_ID(), iParam0, 10, true, true);
+    }
+    else if (!WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar0, true) || iVar0 != iParam0)
+    {
+      WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), iParam0, true);
+    }
+    WEAPON::ADD_AMMO_TO_PED(PLAYER::PLAYER_PED_ID(), iParam0, 10000);
+    WEAPON::SET_PED_INFINITE_AMMO(PLAYER::PLAYER_PED_ID(), true, iParam0);
+    WEAPON::SET_PED_CURRENT_WEAPON_VISIBLE(PLAYER::PLAYER_PED_ID(), true, true, true, false);
+    PED::SET_PED_CAN_SWITCH_WEAPON(PLAYER::PLAYER_PED_ID(), false);
+    WEAPON::REFILL_AMMO_INSTANTLY(PLAYER::PLAYER_PED_ID());
+    PED::SET_PED_USING_ACTION_MODE(PLAYER::PLAYER_PED_ID(), true, -1, 0);
+  }
+}

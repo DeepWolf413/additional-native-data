@@ -1,0 +1,7 @@
+// startup.ysc @ L262
+void func_1()
+{
+  MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
+  NETWORK::_0x3E74A687A73979C6(1);
+  AUDIO::_0x6339C1EA3979B5F7("Main_Menu", "Load_Menu_Scenes");
+}

@@ -1,0 +1,8 @@
+// beat_bandito_breakout.ysc @ L615
+void func_22()
+{
+  VEHICLE::SET_VEHICLE_DENSITY_MULTIPLIER_THIS_FRAME(0f);
+  PATHFIND::_0xB03944057FD735BA(iLocal_23[4], 5, 0);
+  PATHFIND::_0xB03944057FD735BA(iLocal_23[4], 3, 0);
+  PATHFIND::_0xC1799FAFD2FDF52B(iLocal_23[4], 0, 0, 0);
+}

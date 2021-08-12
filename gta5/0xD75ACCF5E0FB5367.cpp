@@ -1,0 +1,16 @@
+// agency_heist3a.ysc @ L134217
+void func_1043()
+{
+  if (func_735())
+  {
+    PAD::DISABLE_CONTROL_ACTION(0, 21, true);
+    PAD::DISABLE_CONTROL_ACTION(0, 22, true);
+    PAD::DISABLE_CONTROL_ACTION(0, 44, true);
+    PAD::DISABLE_CONTROL_ACTION(0, 36, true);
+    PAD::DISABLE_CONTROL_ACTION(0, 140, true);
+    PAD::DISABLE_CONTROL_ACTION(0, 141, true);
+    PED::SET_PED_STEALTH_MOVEMENT(PLAYER::PLAYER_PED_ID(), false, 0);
+    PED::SET_PED_USING_ACTION_MODE(PLAYER::PLAYER_PED_ID(), false, -1, 0);
+    func_1044();
+  }
+}

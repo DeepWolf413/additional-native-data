@@ -1,0 +1,21 @@
+// finale1.ysc @ L86151
+void func_2166()
+{
+  func_1517(6);
+  WEAPON::SET_CURRENT_PED_WEAPON(Local_225[3 /*9*/], joaat("WEAPON_UNARMED"), true, 0, false, false);
+  PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_225[3 /*9*/], iLocal_1487);
+  PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_225[3 /*9*/], false);
+  PED::SET_PED_CONFIG_FLAG(Local_225[3 /*9*/], 258, true);
+  PED::SET_PED_CONFIG_FLAG(Local_225[3 /*9*/], 249, true);
+  PED::_0xEAE3B5B019C8D23F(Local_225[3 /*9*/], 262143);
+  ENTITY::SET_ENTITY_INVINCIBLE(Local_225[3 /*9*/], false);
+  ENTITY::SET_ENTITY_IS_TARGET_PRIORITY(Local_225[3 /*9*/], true, 0f);
+  PED::SET_PED_CONFIG_FLAG(Local_225[3 /*9*/], 224, true);
+  PED::SET_PED_CAN_RAGDOLL(Local_225[3 /*9*/], false);
+  AUDIO::STOP_PED_SPEAKING(Local_225[3 /*9*/], true);
+  PED::_SET_PED_BRAWLING_STYLE(Local_225[3 /*9*/], joaat("BS_MICAH_FINALE"));
+  PED::_0xB8DE69D9473B7593(Local_225[3 /*9*/], 28);
+  PED::SET_PED_CONFIG_FLAG(Local_225[3 /*9*/], 169, true);
+  PED::SET_AI_MELEE_WEAPON_DAMAGE_MODIFIER(0.75f);
+  PED::SET_PED_COMBAT_MOVEMENT(Local_225[3 /*9*/], 1);
+}

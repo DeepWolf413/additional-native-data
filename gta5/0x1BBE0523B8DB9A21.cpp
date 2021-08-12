@@ -1,0 +1,9 @@
+// chinese1.ysc @ L105264
+int func_611()
+{
+  if ((((((STREAMING::HAS_MODEL_LOADED(func_91(2)) && STREAMING::HAS_MODEL_LOADED(Local_354.f_1)) && STREAMING::HAS_MODEL_LOADED(Local_376.f_1)) && STREAMING::HAS_MODEL_LOADED(func_528(2, 0))) && VEHICLE::HAS_VEHICLE_ASSET_LOADED(Local_1307.f_1)) && STREAMING::HAS_MODEL_LOADED(Local_1633[0 /*24*/].f_2)) && STREAMING::HAS_ANIM_DICT_LOADED(sLocal_2627))
+  {
+    return 1;
+  }
+  return 0;
+}

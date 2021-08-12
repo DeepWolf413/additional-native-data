@@ -1,0 +1,24 @@
+// mudtown1.ysc @ L68667
+void func_1748()
+{
+  if (ENTITY::DOES_ENTITY_EXIST(iLocal_423[3]) && !ENTITY::IS_ENTITY_DEAD(iLocal_423[3]))
+  {
+    VEHICLE::_0x165BE2001E5E4B75(iLocal_423[3]);
+  }
+  if (ENTITY::DOES_ENTITY_EXIST(iLocal_423[0]) && !ENTITY::IS_ENTITY_DEAD(iLocal_423[0]))
+  {
+    VEHICLE::_0x165BE2001E5E4B75(iLocal_423[0]);
+  }
+  if (ENTITY::DOES_ENTITY_EXIST(iLocal_423[1]) && !ENTITY::IS_ENTITY_DEAD(iLocal_423[1]))
+  {
+    VEHICLE::_0x165BE2001E5E4B75(iLocal_423[1]);
+  }
+  if (ENTITY::DOES_ENTITY_EXIST(iLocal_423[2]) && !ENTITY::IS_ENTITY_DEAD(iLocal_423[2]))
+  {
+    VEHICLE::_0x165BE2001E5E4B75(iLocal_423[2]);
+  }
+  if (ENTITY::DOES_ENTITY_EXIST(iLocal_423[4]) && !ENTITY::IS_ENTITY_DEAD(iLocal_423[4]))
+  {
+    VEHICLE::_0x165BE2001E5E4B75(iLocal_423[4]);
+  }
+}

@@ -1,0 +1,28 @@
+// carsteal4.ysc @ L124956
+void func_908()
+{
+  if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
+  {
+    PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 0);
+  }
+  HUD::CLEAR_HELP(true);
+  HUD::CLEAR_PRINTS();
+  PAD::_SWITCH_TO_INPUT_MAPPING_SCHEME("Carsteal5_spycar_crane");
+  HUD::REQUEST_ADDITIONAL_TEXT("H4HEIST", 0);
+  PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, 1862763509, 1862763509);
+  PED::SET_PED_RELATIONSHIP_GROUP_HASH(PLAYER::PLAYER_PED_ID(), 1862763509);
+  VEHICLE::SET_ALL_VEHICLE_GENERATORS_ACTIVE_IN_AREA(585.5f, -2645.5f, 1.6f, 600f, -2610.9f, 10.6f, false, true);
+  func_54(&Local_2124, 1, PLAYER::PLAYER_PED_ID(), "FRANKLIN", 0, 1);
+  func_691();
+  func_909();
+  func_839(1);
+  func_38(39, 1);
+  func_38(40, 1);
+  func_38(41, 1);
+  func_38(42, 1);
+  func_38(43, 1);
+  func_38(44, 1);
+  func_547(&Local_1995);
+  iLocal_3586 = AUDIO::GET_SOUND_ID();
+  MISC::SET_STUNT_JUMPS_CAN_TRIGGER(false);
+}

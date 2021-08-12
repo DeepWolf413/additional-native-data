@@ -1,0 +1,17 @@
+// fmmc_launcher.ysc @ L102713
+void func_590()
+{
+  if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
+  {
+    return;
+  }
+  if (!NETWORK::NETWORK_IS_IN_TUTORIAL_SESSION())
+  {
+    return;
+  }
+  if (!NETWORK::NETWORK_IS_TUTORIAL_SESSION_CHANGE_PENDING())
+  {
+    NETWORK::NETWORK_END_TUTORIAL_SESSION();
+  }
+  NETWORK::_0x3C5C1E2C2FF814B1(false);
+}

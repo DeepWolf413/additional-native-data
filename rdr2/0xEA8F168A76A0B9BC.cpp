@@ -1,0 +1,26 @@
+// native1.ysc @ L51466
+void func_1218(int iParam0)
+{
+  if (iParam0 == 1)
+  {
+    if (PLAYER::_0xEA8F168A76A0B9BC(PLAYER::GET_PLAYER_INDEX(), iLocal_347, 33, 2))
+    {
+      PLAYER::_0xA3DB37EDF9A74635(PLAYER::GET_PLAYER_INDEX(), iLocal_347, 33, 2, 0);
+    }
+    if (PLAYER::_0xEA8F168A76A0B9BC(PLAYER::GET_PLAYER_INDEX(), iLocal_347, 11, 2))
+    {
+      PLAYER::_0xA3DB37EDF9A74635(PLAYER::GET_PLAYER_INDEX(), iLocal_347, 11, 2, 0);
+    }
+  }
+  else
+  {
+    if (!PLAYER::_0xEA8F168A76A0B9BC(PLAYER::GET_PLAYER_INDEX(), iLocal_347, 33, 2))
+    {
+      PLAYER::_0xA3DB37EDF9A74635(PLAYER::GET_PLAYER_INDEX(), iLocal_347, 33, 2, 1);
+    }
+    if (!PLAYER::_0xEA8F168A76A0B9BC(PLAYER::GET_PLAYER_INDEX(), iLocal_347, 11, 2))
+    {
+      PLAYER::_0xA3DB37EDF9A74635(PLAYER::GET_PLAYER_INDEX(), iLocal_347, 11, 2, 1);
+    }
+  }
+}

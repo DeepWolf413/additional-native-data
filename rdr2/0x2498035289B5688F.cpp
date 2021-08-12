@@ -1,0 +1,6 @@
+// short_update.ysc @ L18041
+void func_536()
+{
+  PLAYER::_0x2498035289B5688F(PLAYER::PLAYER_ID(), 0f);
+  PLAYER::_0x51345AE20F22C261(PLAYER::PLAYER_ID(), Global_40.f_11095.f_39, 0, 1, 1);
+}

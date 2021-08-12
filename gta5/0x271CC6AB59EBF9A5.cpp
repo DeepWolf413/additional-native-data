@@ -1,0 +1,8 @@
+// fmmc_launcher.ysc @ L599300
+void func_9532()
+{
+  if ((!Global_262145.f_4682 && (NETWORK::NETWORK_IS_TRANSITION_HOST() || NETWORK::NETWORK_IS_HOST())) && NETWORK::NETWORK_SESSION_GET_PRIVATE_SLOTS() == 0)
+  {
+    NETWORK::NETWORK_SESSION_MARK_VISIBLE(true);
+  }
+}

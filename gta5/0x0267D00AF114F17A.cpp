@@ -1,0 +1,12 @@
+// agency_heist2.ysc @ L20812
+void func_333()
+{
+  if ((MISC::GET_GAME_TIMER() - iLocal_185) > 500)
+  {
+    if ((ENTITY::DOES_ENTITY_EXIST(iLocal_85) && !PED::IS_PED_INJURED(iLocal_85)) && !PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
+    {
+      bLocal_184 = (ENTITY::HAS_ENTITY_CLEAR_LOS_TO_ENTITY_IN_FRONT(iLocal_85, PLAYER::PLAYER_PED_ID()) && SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), ENTITY::GET_ENTITY_COORDS(iLocal_85, true)) < 100f);
+      iLocal_185 = MISC::GET_GAME_TIMER();
+    }
+  }
+}

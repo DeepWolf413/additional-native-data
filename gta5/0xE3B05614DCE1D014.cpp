@@ -1,0 +1,14 @@
+// appinternet.ysc @ L54905
+void func_391(var uParam0)
+{
+  *uParam0 = func_525(HUD::GET_GLOBAL_ACTIONSCRIPT_FLAG(13), 0, 3);
+  uParam0->f_1 = func_525(HUD::GET_GLOBAL_ACTIONSCRIPT_FLAG(13), 3, 4);
+  uParam0->f_2 = func_525(HUD::GET_GLOBAL_ACTIONSCRIPT_FLAG(13), 7, 4);
+  uParam0->f_3 = func_525(HUD::GET_GLOBAL_ACTIONSCRIPT_FLAG(13), 11, 4);
+  uParam0->f_4 = func_525(HUD::GET_GLOBAL_ACTIONSCRIPT_FLAG(13), 15, 1);
+  uParam0->f_5 = func_525(HUD::GET_GLOBAL_ACTIONSCRIPT_FLAG(13), 16, 1);
+  uParam0->f_6 = func_525(HUD::GET_GLOBAL_ACTIONSCRIPT_FLAG(13), 17, 1);
+  uParam0->f_7 = func_525(HUD::GET_GLOBAL_ACTIONSCRIPT_FLAG(13), 18, 1);
+  uParam0->f_8 = func_525(HUD::GET_GLOBAL_ACTIONSCRIPT_FLAG(13), 19, 1);
+  uParam0->f_9 = func_525(HUD::GET_GLOBAL_ACTIONSCRIPT_FLAG(13), 20, 1);
+}

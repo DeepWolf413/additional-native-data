@@ -1,0 +1,29 @@
+// am_mp_arena_garage.ysc @ L381807
+void func_6274(bool bParam0, struct<3> Param1)
+{
+  if (!ENTITY::DOES_ENTITY_EXIST(Local_320.f_466))
+  {
+    if (func_6294(iParam0, 1, 1))
+    {
+      if (!func_217())
+      {
+        Local_320.f_466 = PED::CREATE_PED(4, ENTITY::GET_ENTITY_MODEL(PLAYER::GET_PLAYER_PED(iParam0)), ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(bParam0), true) + Param1, ENTITY::GET_ENTITY_HEADING(PLAYER::GET_PLAYER_PED(bParam0)), false, false);
+      }
+      else
+      {
+        Local_320.f_466 = PED::CREATE_PED(5, ENTITY::GET_ENTITY_MODEL(PLAYER::GET_PLAYER_PED(bParam0)), ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(bParam0), true) + Param1, ENTITY::GET_ENTITY_HEADING(PLAYER::GET_PLAYER_PED(bParam0)), false, false);
+      }
+      PED::CLONE_PED_TO_TARGET(PLAYER::GET_PLAYER_PED(bParam0), Local_320.f_466);
+      if (INTERIOR::IS_VALID_INTERIOR(INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::GET_PLAYER_PED(bParam0))))
+      {
+        if (INTERIOR::IS_INTERIOR_READY(INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::GET_PLAYER_PED(bParam0))))
+        {
+          INTERIOR::FORCE_ROOM_FOR_ENTITY(Local_320.f_466, INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::GET_PLAYER_PED(bParam0)), INTERIOR::GET_ROOM_KEY_FROM_ENTITY(PLAYER::GET_PLAYER_PED(bParam0)));
+        }
+      }
+      ENTITY::FREEZE_ENTITY_POSITION(Local_320.f_466, true);
+      WEAPON::SET_CURRENT_PED_WEAPON(Local_320.f_466, joaat("weapon_unarmed"), true);
+      PED::SET_FORCE_FOOTSTEP_UPDATE(Local_320.f_466, true);
+    }
+  }
+}

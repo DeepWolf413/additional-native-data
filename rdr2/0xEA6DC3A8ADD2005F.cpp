@@ -1,0 +1,7 @@
+// benchmark.ysc @ L7282
+void func_259()
+{
+  PED::_0x4759CC730F947C81();
+  VEHICLE::_0x1FF00DB43026B12F();
+  MISC::POPULATE_NOW();
+}

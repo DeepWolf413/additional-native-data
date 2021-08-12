@@ -1,0 +1,25 @@
+// am_boat_taxi.ysc @ L5445
+void func_133()
+{
+  if (func_72(Local_63.f_2))
+  {
+    TASK::OPEN_SEQUENCE_TASK(&iLocal_187);
+    TASK::TASK_BOAT_MISSION(0, NETWORK::NET_TO_VEH(Local_63.f_2), 0, 0, Local_63.f_7, 4, 12f, 786469, 10f, 1071);
+    TASK::CLOSE_SEQUENCE_TASK(iLocal_187);
+    TASK::OPEN_SEQUENCE_TASK(&iLocal_186);
+    TASK::TASK_VEHICLE_MISSION_COORS_TARGET(0, NETWORK::NET_TO_VEH(Local_63.f_2), Local_63.f_13, 4, 12f, 786469, 0f, 0f, true);
+    TASK::TASK_VEHICLE_DRIVE_WANDER(0, NETWORK::NET_TO_VEH(Local_63.f_2), 12f, 786469);
+    TASK::CLOSE_SEQUENCE_TASK(iLocal_186);
+    TASK::OPEN_SEQUENCE_TASK(&iLocal_185);
+    TASK::TASK_LEAVE_ANY_VEHICLE(0, 0, 64);
+    if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
+    {
+      TASK::TASK_SMART_FLEE_PED(0, PLAYER::PLAYER_PED_ID(), 300f, -1, false, false);
+    }
+    else
+    {
+      TASK::TASK_WANDER_STANDARD(0, 40000f, 0);
+    }
+    TASK::CLOSE_SEQUENCE_TASK(iLocal_185);
+  }
+}

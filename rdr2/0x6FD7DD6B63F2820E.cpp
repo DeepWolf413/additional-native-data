@@ -1,0 +1,19 @@
+// mob2.ysc @ L18606
+void func_176(char[4] cParam0)
+{
+  MAP::DISPLAY_RADAR(true);
+  PLAYER::SET_POLICE_RADAR_BLIPS(false);
+  func_471(0);
+  func_472(1);
+  func_473(945612176, 1, 0);
+  if (STREAMING::_IS_IMAP_ACTIVE(-741366935))
+  {
+    STREAMING::_REMOVE_IMAP(-741366935);
+  }
+  if (!STREAMING::_IS_IMAP_ACTIVE(-800942395))
+  {
+    STREAMING::_REQUEST_IMAP(-800942395);
+  }
+  ENTITY::REMOVE_MODEL_HIDE(2698.51f, -1061.01f, 47.24f, 2f, joaat("P_DOOR48X"), 1);
+  PED::_0x9851DE7AEC10B4E1(func_1(8, 0), 100f, 1, 0);
+}

@@ -1,0 +1,20 @@
+// utopia1.ysc @ L56350
+void func_1341(int iParam0, int iParam1)
+{
+  if (!func_187(128))
+  {
+    iParam1 = iParam1;
+    LAW::_0x22741652985C84D0(PLAYER::PLAYER_ID(), func_1913(func_1912(), 1));
+    LAW::_0x22741652985C84D0(PLAYER::PLAYER_ID(), joaat("LAW_REGION_STRAWBERRY"));
+    LAW::_0x22741652985C84D0(PLAYER::PLAYER_ID(), joaat("LAW_REGION_BIG_VALLEY"));
+    func_40(1);
+    MISC::BLOCK_DISPATCH_SERVICE_RESOURCE_CREATION(15, true);
+    MISC::BLOCK_DISPATCH_SERVICE_RESOURCE_CREATION(6, true);
+    LAW::_0x331D349E0380B097(400);
+    LAW::_REPORT_CRIME(PLAYER::PLAYER_ID(), iParam0, 0, 0, true);
+    MISC::_0x6BCF7B5CD338281A(VOLUME::_GET_VOLUME_COORDS(iLocal_476));
+    func_1914(func_188(26));
+    func_232(&uLocal_222);
+    func_470(128);
+  }
+}

@@ -1,0 +1,9 @@
+// shop_barber.ysc @ L13362
+int func_404(var uParam0)
+{
+  _NAMESPACE30::_0x0546B117BB17548B();
+  CAM::_DISABLE_FIRST_PERSON_CAM_THIS_FRAME();
+  CAM::_0x8910C24B7E0046EC();
+  CAM::_0x3C8F74E8FE751614();
+  return 1;
+}

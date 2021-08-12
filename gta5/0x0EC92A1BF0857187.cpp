@@ -1,0 +1,17 @@
+// jewelry_setup1.ysc @ L100449
+void func_531()
+{
+  if (CUTSCENE::IS_CUTSCENE_ACTIVE())
+  {
+    CUTSCENE::STOP_CUTSCENE(false);
+  }
+  CUTSCENE::REMOVE_CUTSCENE();
+  AUDIO::RELEASE_MISSION_AUDIO_BANK();
+  func_366(0);
+  func_315();
+  HUD::CLEAR_PRINTS();
+  if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
+  {
+    ENTITY::SET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), true, false, false, true);
+  }
+}

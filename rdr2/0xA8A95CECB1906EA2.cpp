@@ -1,0 +1,28 @@
+// odriscolls3.ysc @ L75246
+int func_1859()
+{
+  if (!PED::DOES_GROUP_EXIST(iLocal_1179))
+  {
+    iLocal_1179 = PED::CREATE_GROUP(0);
+  }
+  if (!PED::DOES_GROUP_EXIST(iLocal_1179))
+  {
+    return 0;
+  }
+  PED::SET_GROUP_FORMATION(iLocal_1179, 10);
+  PED::SET_PED_CONFIG_FLAG(Local_133[7 /*6*/], 279, true);
+  PED::SET_PED_AS_GROUP_LEADER(Local_133[7 /*6*/], iLocal_1179, true);
+  TASK::TASK_FOLLOW_WAYPOINT_RECORDING(Local_133[7 /*6*/], func_496(91), 0, 9226, -1, 0, 1, -1);
+  PED::SET_PED_CONFIG_FLAG(Local_133[6 /*6*/], 279, true);
+  PED::SET_PED_AS_GROUP_MEMBER(Local_133[6 /*6*/], iLocal_1179);
+  PED::_0x0E9E95FDEDCC9D35(Local_133[6 /*6*/], 1, 0);
+  PLAYER::_0x12E09E278C6C29B7(PLAYER::PLAYER_ID());
+  PLAYER::_0xAC22AA6DF4D1C1DE(PLAYER::PLAYER_ID(), Local_133[7 /*6*/], -1082130432 /* Float: -1f */, -1082130432 /* Float: -1f */, 2, 3, 0);
+  PED::_0x9BBEAF8B0C007F1E(Local_133[7 /*6*/], 0);
+  PED::_0xC99F104BDF8C7F5A(Local_133[7 /*6*/], 0);
+  PED::_0x7E5185B979706210(iLocal_1179, 2);
+  PED::_0xA8A95CECB1906EA2(iLocal_1179, 1);
+  PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_133[7 /*6*/], true);
+  PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_133[6 /*6*/], false);
+  return 1;
+}

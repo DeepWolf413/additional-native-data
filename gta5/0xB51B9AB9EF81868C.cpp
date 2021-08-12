@@ -1,0 +1,9 @@
+// finalec2.ysc @ L5746
+void func_25()
+{
+  MISC::SET_CREDITS_ACTIVE(true);
+  MISC::_0xB51B9AB9EF81868C(false);
+  AUDIO::START_AUDIO_SCENE("END_CREDITS_SCENE");
+  STREAMING::SET_GAME_PAUSES_FOR_STREAMING(false);
+  bLocal_936 = true;
+}

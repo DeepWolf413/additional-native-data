@@ -1,0 +1,22 @@
+// maintransition.ysc @ L100238
+void func_602()
+{
+  if (func_29(201))
+  {
+    if (func_604())
+    {
+      LOADINGSCREEN::_0xFA1E0E893D915215(false);
+      LOADINGSCREEN::_LOADINGSCREEN_SET_LOAD_FREEMODE(true);
+      LOADINGSCREEN::_LOADINGSCREEN_SET_LOAD_FREEMODE_WITH_EVENT_NAME(false);
+      LOADINGSCREEN::_LOADINGSCREEN_SET_IS_LOADING_FREEMODE(false);
+      NETWORK::_SHUTDOWN_AND_LOAD_MOST_RECENT_SAVE();
+      STATS::PLAYSTATS_BACKGROUND_SCRIPT_ACTION("BG_SCRIPT_KICK", 6);
+    }
+    else
+    {
+      func_603(0);
+      func_4334("HUD_QUITTING");
+      func_34(63, -1, 32);
+    }
+  }
+}

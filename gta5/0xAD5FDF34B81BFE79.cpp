@@ -1,0 +1,12 @@
+// creator.ysc @ L112552
+void func_911()
+{
+  Global_2465745 = 1;
+  if (STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
+  {
+    if (STREAMING::IS_SWITCH_READY_FOR_DESCENT())
+    {
+      STREAMING::ALLOW_PLAYER_SWITCH_DESCENT();
+    }
+  }
+}

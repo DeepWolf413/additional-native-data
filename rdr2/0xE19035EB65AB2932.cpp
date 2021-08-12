@@ -1,0 +1,6 @@
+// homeinvasion.ysc @ L62520
+void func_1773(var uParam0, char* sParam1)
+{
+  ENTITY::_0xCDB682BB47C02F0A(*uParam0, joaat("NULL_OVERRIDE_CARRIABLE_PROMPT_TABLE"));
+  ENTITY::_0xE19035EB65AB2932(*uParam0, joaat("NULL_OVERRIDE_LOOTABLE_PROMPT_TABLE"));
+}

@@ -1,0 +1,20 @@
+// family1.ysc @ L29891
+void func_473()
+{
+  if (!ENTITY::IS_ENTITY_DEAD(iLocal_3030, false))
+  {
+    VEHICLE::UNPAUSE_PLAYBACK_RECORDED_VEHICLE(iLocal_3030);
+  }
+  if (!ENTITY::IS_ENTITY_DEAD(iLocal_3031, false))
+  {
+    VEHICLE::UNPAUSE_PLAYBACK_RECORDED_VEHICLE(iLocal_3031);
+  }
+  if (!ENTITY::IS_ENTITY_DEAD(iLocal_54, false))
+  {
+    VEHICLE::UNPAUSE_PLAYBACK_RECORDED_VEHICLE(iLocal_54);
+  }
+  if (!ENTITY::IS_ENTITY_DEAD(iLocal_55, false))
+  {
+    VEHICLE::UNPAUSE_PLAYBACK_RECORDED_VEHICLE(iLocal_55);
+  }
+}

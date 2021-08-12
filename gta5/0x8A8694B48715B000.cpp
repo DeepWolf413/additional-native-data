@@ -1,0 +1,16 @@
+// fm_deathmatch_controler.ysc @ L512860
+void func_8713()
+{
+  if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()) && PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
+  {
+    if (NETWORK::NETWORK_IS_LOCAL_PLAYER_INVINCIBLE())
+    {
+      PAD::DISABLE_CONTROL_ACTION(0, 69, true);
+      PAD::DISABLE_CONTROL_ACTION(0, 70, true);
+      PAD::DISABLE_CONTROL_ACTION(0, 68, true);
+      PAD::DISABLE_CONTROL_ACTION(0, 345, true);
+      PAD::DISABLE_CONTROL_ACTION(0, 346, true);
+      PAD::DISABLE_CONTROL_ACTION(0, 347, true);
+    }
+  }
+}

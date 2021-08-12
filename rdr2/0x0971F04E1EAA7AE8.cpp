@@ -1,0 +1,26 @@
+// cheat_ui.ysc @ L47
+void func_2()
+{
+  int iVar0;
+
+  func_5();
+  Local_9 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER_FROM_PATH("", "cheats");
+  Local_9.f_3 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(Local_9, "currentSelection");
+  DATABINDING::_DATABINDING_ADD_DATA_HASH(Local_9.f_3, func_6(12), MISC::GET_HASH_KEY(""));
+  DATABINDING::_DATABINDING_ADD_DATA_HASH(Local_9.f_3, func_6(13), MISC::GET_HASH_KEY(""));
+  DATABINDING::_DATABINDING_ADD_DATA_HASH(Local_9.f_3, func_6(16), MISC::GET_HASH_KEY(""));
+  Local_9.f_2 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(Local_9, "currentGroup");
+  DATABINDING::_DATABINDING_ADD_DATA_HASH(Local_9.f_2, func_6(14), MISC::GET_HASH_KEY("PM_SCR_CHEATS"));
+  DATABINDING::_DATABINDING_ADD_DATA_HASH(Local_9.f_2, func_6(15), MISC::GET_HASH_KEY(""));
+  DATABINDING::_DATABINDING_ADD_DATA_HASH(Local_9.f_2, func_6(16), MISC::GET_HASH_KEY(""));
+  Local_9.f_1 = DATABINDING::_DATABINDING_ADD_UI_ITEM_LIST(Local_9, "dynamicList");
+  iVar0 = 0;
+  while (iVar0 <= 36)
+  {
+    func_7(iVar0);
+    iVar0++;
+  }
+  DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(Local_9.f_3, func_6(13), MISC::GET_HASH_KEY(func_8(0)));
+  func_9();
+  func_10();
+}

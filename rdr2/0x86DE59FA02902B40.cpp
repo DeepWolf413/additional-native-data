@@ -1,0 +1,14 @@
+// short_update.ysc @ L34935
+void func_1081(vector3 vParam0)
+{
+  MISC::CLEAR_AREA(vParam0, 5000f, 6639498);
+  PED::_0x9851DE7AEC10B4E1(vParam0, 5000f, 1, 0);
+  TASK::_0x4161648394262FDF(vParam0, 5000f);
+  GRAPHICS::REMOVE_DECALS_IN_RANGE(vParam0, 5000f);
+  if (!func_1060(Global_1347343.f_11, 128))
+  {
+    PED::_0x4759CC730F947C81();
+    VEHICLE::_0x1FF00DB43026B12F();
+  }
+  PERSCHAR::_0xB173599D61FAEB31();
+}

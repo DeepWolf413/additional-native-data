@@ -1,0 +1,22 @@
+// mary3.ysc @ L54077
+void func_1269(int iParam0)
+{
+  if (ENTITY::DOES_ENTITY_EXIST(iParam0) && !ENTITY::IS_ENTITY_DEAD(iParam0))
+  {
+    if ((VEHICLE::_IS_DRAFT_VEHICLE(iParam0) || func_1707(iParam0)) && !ENTITY::IS_ENTITY_DEAD(iParam0))
+    {
+      VEHICLE::_0xD826690B5CF3BEFF(iParam0, 1f);
+      VEHICLE::_0x850CE59DEC2028F3(iParam0, 1);
+      VEHICLE::_0x6090A031C69F384E(iParam0, 1);
+    }
+    VEHICLE::SET_VEHICLE_WHEELS_CAN_BREAK(iParam0, true);
+    VEHICLE::SET_VEHICLE_WHEELS_CAN_BREAK_OFF_WHEN_BLOW_UP(iParam0, true);
+    VEHICLE::SET_VEHICLE_EXPLODES_ON_HIGH_EXPLOSION_DAMAGE(iParam0, true);
+    VEHICLE::SET_VEHICLE_HAS_STRONG_AXLES(iParam0, false);
+    ENTITY::SET_ENTITY_CAN_BE_DAMAGED(iParam0, true);
+    if (VEHICLE::_0xE777DDF3E78397E8(iParam0) > 0)
+    {
+      VEHICLE::SET_VEHICLE_CAN_BREAK(iParam0, true);
+    }
+  }
+}

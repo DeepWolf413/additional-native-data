@@ -1,0 +1,13 @@
+// am_mp_arcade_strength_test.ysc @ L6383
+void func_211()
+{
+  if (func_4(PLAYER::PLAYER_PED_ID()))
+  {
+    ENTITY::FREEZE_ENTITY_POSITION(PLAYER::PLAYER_PED_ID(), false);
+    PHYSICS::_SET_ENTITY_PROOF_UNK(PLAYER::PLAYER_PED_ID(), false);
+  }
+  if (TASK::IS_TASK_MOVE_NETWORK_ACTIVE(PLAYER::PLAYER_PED_ID()))
+  {
+    TASK::_0x0FFB3C758E8C07B9(PLAYER::PLAYER_PED_ID(), false);
+  }
+}

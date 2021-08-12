@@ -1,0 +1,22 @@
+// braithwaites3.ysc @ L52484
+void func_1279()
+{
+  int iVar0;
+  vector3 vVar1;
+
+  iLocal_674[10] = VOLUME::_CREATE_VOLUME_BOX(1002.322f, -1740.601f, 46.52341f, 0f, 0f, 0f, 3.732204f, 3.33113f, 2.070959f);
+  iLocal_674[11] = VOLUME::_CREATE_VOLUME_BOX(999.5539f, -1736.018f, 46.59736f, 0f, 0f, 0f, 4.105087f, 3.374601f, 3.341059f);
+  iLocal_674[12] = VOLUME::_CREATE_VOLUME_BOX(1006.124f, -1736.192f, 46.00604f, 0f, 0f, 0f, 3.865525f, 3.371006f, 2.896518f);
+  iLocal_674[13] = VOLUME::_CREATE_VOLUME_BOX(995.4949f, -1729.242f, 46.37605f, 0f, 0f, 0f, 3.004457f, 2.560457f, 2.338314f);
+  iLocal_674[14] = VOLUME::_CREATE_VOLUME_BOX(1016.467f, -1737.591f, 46.857f, 0f, 0f, 0f, 4.15117f, 6.292162f, 3.258774f);
+  iLocal_674[15] = VOLUME::_CREATE_VOLUME_BOX(1022.742f, -1739.691f, 46.82804f, 0f, 0f, 0f, 3.581134f, 4.750547f, 2.918159f);
+  iLocal_674[16] = VOLUME::_CREATE_VOLUME_BOX(1021.812f, -1728.827f, 46.54863f, 0f, 0f, 0f, 3.355713f, 3.416018f, 1.861434f);
+  vVar1.f_2 = 1;
+  iVar0 = 10;
+  while (iVar0 <= 16)
+  {
+    vVar1.x = iLocal_674[iVar0];
+    AICOVERPOINT::_0x733077295AB51304(&vVar1);
+    iVar0++;
+  }
+}

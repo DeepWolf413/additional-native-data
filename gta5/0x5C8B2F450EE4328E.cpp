@@ -1,0 +1,29 @@
+// am_mp_shooting_range.ysc @ L111870
+void func_909()
+{
+  if (Local_1735 != 2)
+  {
+    Stack.Push(&Local_1735);
+    Call_Loc(Local_1713.f_8);
+  }
+  func_878(0, 0);
+  MISC::CLEAR_BIT(&(Global_1683970.f_1), 18);
+  PLAYER::SET_PLAYER_INVINCIBLE(PLAYER::PLAYER_ID(), false);
+  PLAYER::SET_PLAYER_LOCKON(PLAYER::PLAYER_ID(), true);
+  PLAYER::_0xD821056B9ACF8052(PLAYER::PLAYER_ID(), 1065353216);
+  NETWORK::NETWORK_SET_FRIENDLY_FIRE_OPTION(true);
+  PLAYER::SET_WANTED_LEVEL_MULTIPLIER(1f);
+  if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
+  {
+    PED::SET_PED_CONFIG_FLAG(PLAYER::PLAYER_PED_ID(), 108, false);
+    PED::SET_PED_CONFIG_FLAG(PLAYER::PLAYER_PED_ID(), 208, false);
+    PED::SET_PED_CONFIG_FLAG(PLAYER::PLAYER_PED_ID(), 122, false);
+    PED::SET_PED_CAN_BE_TARGETTED(PLAYER::PLAYER_PED_ID(), true);
+    ENTITY::SET_ENTITY_CAN_BE_DAMAGED(PLAYER::PLAYER_PED_ID(), true);
+  }
+  if (((((func_760("MP_SR_HELP_1") || func_760("MP_SR_HELP_2")) || func_760("MP_SR_HELP_3")) || func_760("MP_SR_HELP_4")) || func_760("MP_SR_HELP_5")) || func_760("MP_SR_IN_USE"))
+  {
+    HUD::CLEAR_HELP(true);
+  }
+  func_910();
+}

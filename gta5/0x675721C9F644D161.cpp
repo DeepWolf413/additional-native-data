@@ -1,0 +1,15 @@
+// freemode.ysc @ L1161162
+void func_20236(var uParam0)
+{
+  Global_1315710 = 0;
+  Global_1315705 = 0;
+  if (GRAPHICS::HAS_SCALEFORM_MOVIE_LOADED(uParam0->f_225))
+  {
+    SOCIALCLUB::_0x675721C9F644D161();
+    GRAPHICS::SET_SCALEFORM_MOVIE_AS_NO_LONGER_NEEDED(&(uParam0->f_225));
+  }
+  func_20237(0);
+  HUD::THEFEED_FLUSH_QUEUE();
+  Global_2464679 = 0;
+  HUD::THEFEED_SPS_EXTEND_WIDESCREEN_OFF();
+}

@@ -1,0 +1,15 @@
+// native_son2.ysc @ L69155
+void func_1817(int* iParam0)
+{
+  if (PHYSICS::DOES_ROPE_EXIST(*iParam0))
+  {
+    PHYSICS::_0x7A54D82227A139DB(iParam0, 1);
+    PHYSICS::_0xFB9153A54AC713E8(*iParam0, 1);
+    PHYSICS::ROPE_DRAW_SHADOW_ENABLED(iParam0, true);
+    PHYSICS::_0x522FA3F490E2F7AC(*iParam0, 0, 1);
+    PHYSICS::ROPE_SET_UPDATE_ORDER(*iParam0, 1);
+    PHYSICS::_0xBB3E9B073E66C3C9(*iParam0, 1, 1, 0, 0);
+    PHYSICS::_0x3900491C0D61ED4B(*iParam0, 1.9f);
+    PHYSICS::_0x1D97DA8ACB5D2582(*iParam0, 29);
+  }
+}

@@ -1,0 +1,16 @@
+// gang2.ysc @ L54903
+void func_1350()
+{
+  if (!PHYSICS::DOES_ROPE_EXIST(Local_524.f_136))
+  {
+    Local_524.f_136 = PHYSICS::_ADD_ROPE_2(ENTITY::GET_ENTITY_COORDS(iLocal_378[1], true, false) + vLocal_989, 0f, 1.571f, 0f, 7f, 0, true, 10, 0.008f);
+    PHYSICS::_0x7A54D82227A139DB(&(Local_524.f_136), 1);
+    PHYSICS::_0xFB9153A54AC713E8(Local_524.f_136, 1);
+    PHYSICS::ROPE_FORCE_LENGTH(Local_524.f_136, 7f);
+    PHYSICS::STOP_ROPE_WINDING(Local_524.f_136);
+    PHYSICS::_0x522FA3F490E2F7AC(Local_524.f_136, 0, 1);
+    PHYSICS::_0x3900491C0D61ED4B(Local_524.f_136, 15f);
+    PHYSICS::_0xB7469CB9AC3C0FD4(Local_524.f_136, iLocal_378[1], vLocal_989, 0, 0, 0);
+    PHYSICS::_0xBB3E9B073E66C3C9(Local_524.f_136, 1, 1, 0, 1);
+  }
+}

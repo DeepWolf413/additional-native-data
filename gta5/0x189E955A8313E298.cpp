@@ -1,0 +1,20 @@
+// carsteal4.ysc @ L97469
+void func_484()
+{
+  if (ENTITY::DOES_ENTITY_EXIST(iLocal_1623))
+  {
+    if (!ENTITY::IS_ENTITY_DEAD(iLocal_1623, false))
+    {
+      if (!CAM::IS_GAMEPLAY_HINT_ACTIVE())
+      {
+        CAM::SET_GAMEPLAY_HINT_FOV(35f);
+        CAM::SET_GAMEPLAY_ENTITY_HINT(iLocal_1623, -1f, 0f, 0.5f, true, -1, 2500, 2000, 0);
+        CAM::_SET_GAMEPLAY_HINT_ANIM_CLOSEUP(true);
+        CAM::_SET_GAMEPLAY_HINT_ANIM_OFFSETX(-0.75f);
+        CAM::_SET_GAMEPLAY_HINT_ANIM_OFFSETY(0.05f);
+        CAM::SET_GAMEPLAY_HINT_FOLLOW_DISTANCE_SCALAR(0.35f);
+        CAM::SET_GAMEPLAY_HINT_BASE_ORBIT_PITCH_OFFSET(-4f);
+      }
+    }
+  }
+}

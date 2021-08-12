@@ -1,0 +1,5 @@
+// braithwaites1.ysc @ L81657
+void func_1925()
+{
+  TASK::TASK_FOLLOW_ENTITY_ALONG_WAYPOINT_RECORDING_AT_OFFSET(0, iLocal_979[0], func_525(71), BUILTIN::TO_FLOAT(MISC::GET_RANDOM_INT_IN_RANGE(-4, 4)), -7.5f, 0, 8, -1, 1);
+}

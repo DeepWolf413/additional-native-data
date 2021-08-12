@@ -1,0 +1,16 @@
+// camera_item.ysc @ L2284
+void func_59(bool bParam0)
+{
+  if (bParam0)
+  {
+    ANIMSCENE::_PAUSE_SCRIPT_THREADS(true);
+    HUD::_UIPROMPT_ENABLE_PROMPT_TYPE_THIS_FRAME(6);
+    GRAPHICS::_0xEC3D8C228FE553D7(0);
+  }
+  else
+  {
+    ANIMSCENE::_PAUSE_SCRIPT_THREADS(false);
+    ANIMSCENE::_0x41AFA5F228B0B6B0();
+    GRAPHICS::_0xEC3D8C228FE553D7(1);
+  }
+}
